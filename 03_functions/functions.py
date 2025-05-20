@@ -121,7 +121,7 @@ def fibonacci(n):
     else:
         return fibonacci(n-1) + fibonacci(n-2)
 
-# print(fibonacci(4))
+print(fibonacci(4))
 
 # ✅ Base cases: fibonacci(1) = 0, fibonacci(2) = 1.
 # ✅ Recursive step: F(n) = F(n-1) + F(n-2).
