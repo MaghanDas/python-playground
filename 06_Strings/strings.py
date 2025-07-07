@@ -49,7 +49,7 @@ text4 = "good Text "
 
 # The split() method splits the string into substrings if it finds instances of the separator:
 text5 = "Hello world"
-# print(text5.split(","))     # ['Hello,', 'world']
+# print(text5.split(" "))     # ['Hello', 'world']
 
 a = "Hello"
 b = "World"
@@ -65,4 +65,4 @@ age = 23;
 
 # escape characters
 print("I like \"stranger things\" show")
-print(23)
+# print(23)
