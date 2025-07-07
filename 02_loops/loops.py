@@ -1,7 +1,10 @@
 
 # for loop
 # for i in range(5):
-    # print("iteration: " ,i)
+#     print("iteration: " ,i)
+    
+# for j in range(0,4,2):
+#     print(j)
 
 # while looop
 # count = 0
@@ -10,7 +13,7 @@
 #   count += 1
 
 # looping through a list..
-# fruits = ["apple", "banana", "cherry"]
+fruits = ["apple", "banana", "cherry"]
 # for fruit in fruits:
 #   print("I like: ",fruit)
 
@@ -21,12 +24,12 @@
 # print(sum)
 
 
-secret_number = 7
+# secret_number = 7
 
-while True: 
-    guess = int(input("enter an integer number:"))
-    if guess==secret_number:
-        break
-    print("Haahahah, not correct")
+# while True: 
+#     guess = int(input("enter an integer number:"))
+#     if guess==secret_number:
+#         break
+#     print("Haahahah, not correct")
 
-print("GOOD JOB!!!")
+# print("GOOD JOB!!!")
