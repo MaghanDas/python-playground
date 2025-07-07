@@ -102,8 +102,8 @@ if "Audiobook" not in book["available_formats"]:
 
 # 🔹 Quick Comparison Table
 # Feature     	                 Lists   	        Tuples 	     Dictionaries	                  Sets
-# Ordered?	                 ✅ Yes	    ✅ Yes  	  ✅ (Python 3.7+)	     ❌ No
-# Mutable?	                ✅ Yes      	❌ No	 ✅ Yes                         ✅ Yes
-# Allows Duplicates?  ✅ Yes	      ✅ Yes	   ❌No (keys)                ❌ No
+# Ordered?	                 ✅ Yes	    ✅ Yes  	  ✅ (Python 3.7+)	    ❌ No
+# Mutable?	                ✅ Yes      	❌ No	 ✅ Yes                  ✅ Yes
+# Allows Duplicates?  ✅ Yes	      ✅ Yes	   ❌No (keys)                   ❌ No
 # Key-Value Pairs?     ❌ No       ❌ No     ✅ Yes	                    ❌ No
-# Indexing Allowed?	 ✅ Yes	     ✅ Yes    ❌No (Uses Keys)	  ❌ No
+# Indexing Allowed?	 ✅ Yes	     ✅ Yes    ❌No (Uses Keys)	            ❌ No
