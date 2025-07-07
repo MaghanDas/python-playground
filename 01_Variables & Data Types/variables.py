@@ -1,13 +1,13 @@
 # to run the code..
 # python3 filename
 
-# print("Hello World!");
+print("Hello World!");
 
 
-age = 23;
-name = "Raj";
+# age = 23;
+# name = "Raj";
 # print(age);
-Age = str(age); # type casting from int to string
+# Age = str(age); # type casting from int to string
 # print(type(Age)); # type() is used to check the type of the variable
 
 # print("My name is " + name + " and my age is " + Age);
