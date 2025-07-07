@@ -16,11 +16,11 @@
 # fun()
 # fun("das")
 
-# def sum(a, b):
-#     return (a+b)
+def sum(a, b):
+    return (a+b)
 
-# def nums(*num):
-#     print(num[1])
+def nums(*num):
+    print(num[1])
 
 # print(sum(3, 2));
 # nums(1, 2, 3, 4, 5, 6);
@@ -32,13 +32,19 @@
 # step (optional) → The difference between consecutive numbers (default is 1).
 
 # factorial of a numebr!!
-# def factorial(num):
-#     fact=1
-#     for i in range(1,num+1):
-#         fact*=i      
-#     return fact
+def factorial(num):
+    fact=1
+    for i in range(1,num+1):
+        fact*=i      
+    return fact
 
+def factorial2(num):
+    if num == 0:
+        return 1
+    else:
+            return num*factorial2(num-1);
 # print(factorial(4))
+# print(factorial2(4))
 # print(factorial(0))
 
 
@@ -79,8 +85,8 @@ def is_even2(num):
 # 🔹 Lambda Functions
 # Python allows anonymous functions using the lambda keyword
 
-square = lambda x: x * x 
-multiply = lambda x,y: x*y
+# square = lambda x: x * x 
+# multiply = lambda x,y: x*y
 # print(square (5))
 # # print(multiply(3,4))
 
@@ -121,7 +127,7 @@ def fibonacci(n):
     else:
         return fibonacci(n-1) + fibonacci(n-2)
 
-print(fibonacci(4))
+# print(fibonacci(4))
 
 # ✅ Base cases: fibonacci(1) = 0, fibonacci(2) = 1.
 # ✅ Recursive step: F(n) = F(n-1) + F(n-2).
