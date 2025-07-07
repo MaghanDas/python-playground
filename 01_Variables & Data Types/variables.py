@@ -1,20 +1,25 @@
 # to run the code..
 # python3 filename
 
-print("Hello World!");
+# print("Hello World!");
 
 
-# age = 23;
-# name = "Raj";
+age = 23;
+name = "Raj";
 # print(age);
 # Age = str(age); # type casting from int to string
+# print(type(age))
 # print(type(Age)); # type() is used to check the type of the variable
 
-# print("My name is " + name + " and my age is " + Age);
+# print("My name is " + name + " and my age is " + str(age));
+# print(name + "12"); 
+# in python only strings can be contenated , number by defauly are not typecasted to string like java. 
+#  we have to do manulaylly typecasting.
+
 # print(f"My name is {name} and my age is {Age}");
 # print(name[0]); 
 
-isprogrammer, isdesigner = True, False;
+# isprogrammer, isdesigner = True, False;
 # print(isprogrammer, isdesigner);
 
 # name = input("Enter your name: ");
@@ -23,12 +28,12 @@ isprogrammer, isdesigner = True, False;
 # age,isPro,country = 23,True,"Hungary";
 # print(age,isPro,country)
 
-# if age > 18:
-#   print("You are 18+");
-# elif age == 18:
-#   print("You are 18");
-# else:
-#   print(f"You are {age} years old");
+if age > 18:
+  print("You are 18+");
+elif age == 18:
+  print("You are 18");
+else:
+  print(f"You are {age} years old");
 
 # name=input()
 # age = int(input("Enter your age: "));
