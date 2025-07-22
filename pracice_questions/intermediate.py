@@ -15,6 +15,8 @@ people = [
     {"name": "Charlie", "age": 35}
 ]
 
+people_sorted = sorted(people, key=lambda dic: dic["age"])
+# print(people_sorted)
 
 # Write a program to read a text file and count the frequency of each word.
 
