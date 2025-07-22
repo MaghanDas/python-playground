@@ -17,13 +17,18 @@
 # print(f"factorial of {number} is {fact}")
 
 # 03: Write a program to reverse a string without using built-in reverse functions.
-name = input("enter a string to reverse: ")
-for i in range(0,(name.__len__() ) // 2):
-    temp=i
-    i=name[(name.__len__())-1]
-    name[(name.__len__() )-1] = i
+def reverse_string(s):
+    if len(s) == 0:
+        return s
+    return reverse_string(s[1:]) + s[0]
 
-print(name)
+name = input("Enter a string to reverse: ")
+print("Reversed string:", reverse_string(name))
+
+# name = input("Enter a string to reverse: ")
+# print("Reversed string:", name[::-1])
+
+# print(name)
 
 # Write a program to count the number of vowels in a given string.
 # Write a program to print the Fibonacci series up to n terms.
