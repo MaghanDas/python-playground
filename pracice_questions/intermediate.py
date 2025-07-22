@@ -1,6 +1,20 @@
 # Write a function that accepts any number of arguments and returns their sum.
+# def getSum(*nums):
+#     sum=0
+#     for i in range(len(nums)):
+#         sum += nums[i]
+        
+#     return sum
+
+# print(getSum(0,1,2,3,4,5,6))
 
 # Write a program to sort a list of dictionaries by a key.
+people = [
+    {"name": "Alice", "age": 30},
+    {"name": "Bob", "age": 25},
+    {"name": "Charlie", "age": 35}
+]
+
 
 # Write a program to read a text file and count the frequency of each word.
 
