@@ -4,23 +4,25 @@
 # defined using [] 
 # can contains distinct type of elements.
 courses=["programming", "Mathematics", "English", 23]
+# print(type(courses))
+courses = {1,2,3}
+# print(type(courses))
 
-# print(courses)
 # print(courses[0])
 # print(courses[-4]) # iprogramming
 # negative indexing start in reversing order
 # print(courses[-1]) # last element
 # print(courses[0]) # first element.
 
-courses.append("Physics") # append in the last of the list
+# courses.append("Physics") # append in the last of the list
 # print(courses.count("programming")) # prgramming appear once in list.
-newlist = courses.copy() # copying the list from courses to newlist
+# newlist = courses.copy() # copying the list from courses to newlist
 # print(newlist)
 # courses.clear() # clear the complete list.
 # courses.extend(newlist) # add newlist to the courses
 # print(courses.index("programming")) 
-num = [1,2,4,3]
-num.sort() # sorting the num list.
+# num = [1,2,4,3]
+# num.sort() # sorting the num list.
 # print(num)
 # courses.reverse() # reverse the list...
 # print(courses)
@@ -38,15 +40,15 @@ num.sort() # sorting the num list.
 # a tuple is an immutable (unchangable) collection.
 # tuples are defined using ().
 
-numbers = (1, 2, "hey", 4, 'a')
+# numbers = (1, 2, "hey", 4, 'a')
 
 # print(numbers)
 # print(numbers[0]) # first element
 # print(numbers[-1]) # last element
 # numbers[1] = 23 # error , because tuples are unchangeable..!
 
-person = ("Maghan", 23, "Student") # packing
-name, age, profession = person #unpacking
+# person = ("Maghan", 23, "Student") # packing
+# name, age, profession = person #unpacking
 # print(person) # ('Maghan', 23, 'Student')
 # print(name, age, profession) # Maghan 23 Student
 # print(age)
@@ -79,12 +81,12 @@ name, age, profession = person #unpacking
 # Print an error message when the modification attempt fails
 
 
-numbers = [1, 2, 3, 4, 5]
-numbers[2] = int(input("Enter a new number: "))  # Replace third element with user input
-tupleNum = tuple(numbers)  # Convert list to tuple
+# numbers = [1, 2, 3, 4, 5]
+# numbers[2] = int(input("Enter a new number: "))  # Replace third element with user input
+# tupleNum = tuple(numbers)  # Convert list to tuple
 
-print("Updated List:", numbers)
-print("Tuple:", tupleNum)
+# print("Updated List:", numbers)
+# print("Tuple:", tupleNum)
 
 # try:
 #     tupleNum[0] = 12  # Attempt to modify tuple (will raise an error)
