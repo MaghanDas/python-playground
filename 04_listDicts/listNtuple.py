@@ -5,7 +5,7 @@
 # can contains distinct type of elements.
 courses=["programming", "Mathematics", "English", 23]
 # print(type(courses))
-courses = {1,2,3}
+# courses = {1,2,3}
 # print(type(courses))
 
 # print(courses[0])
@@ -16,13 +16,17 @@ courses = {1,2,3}
 
 # courses.append("Physics") # append in the last of the list
 # print(courses.count("programming")) # prgramming appear once in list.
-# newlist = courses.copy() # copying the list from courses to newlist
+newlist = courses.copy() # copying the list from courses to newlist
 # print(newlist)
 # courses.clear() # clear the complete list.
+# print(courses)
 # courses.extend(newlist) # add newlist to the courses
+dumy_list = [2,3,4,5]
+dumy_list.extend(newlist)
+# print(dumy_list)
 # print(courses.index("programming")) 
-# num = [1,2,4,3]
-# num.sort() # sorting the num list.
+num = [1,2,4,3]
+num.sort() # sorting the num list.
 # print(num)
 # courses.reverse() # reverse the list...
 # print(courses)
@@ -103,3 +107,13 @@ courses = {1,2,3}
 # Allows Duplicates?  ✅ Yes	      ✅ Yes	   ❌No (keys)                ❌ No
 # Key-Value Pairs?     ❌ No       ❌ No     ✅ Yes	                    ❌ No
 # Indexing Allowed?	 ✅ Yes	     ✅ Yes    ❌No (Uses Keys)	  ❌ No
+
+
+
+# Create a list of 5 different numbers.
+# Replace the third number in the list with a new number provided by the user.
+# Create a tuple from the list.
+# Print both the updated list and the tuple.
+# Try to modify the tuple (this should result in an error since tuples are immutable).
+# Print an error message when the modification attempt fails
+
