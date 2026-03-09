@@ -107,3 +107,66 @@ if "Audiobook" not in book["available_formats"]:
 # Allows Duplicates?  ✅ Yes	      ✅ Yes	   ❌No (keys)                   ❌ No
 # Key-Value Pairs?     ❌ No       ❌ No     ✅ Yes	                    ❌ No
 # Indexing Allowed?	 ✅ Yes	     ✅ Yes    ❌No (Uses Keys)	            ❌ No
+
+# practice: tasks 
+print("******************")
+
+car = {
+    "brand": "Toyota",
+    "model": "Corolla",
+    "year": 2018
+}
+
+# built-in methods
+# print(car.keys())
+# print(car.values())
+# print(car.items())
+# car["color"] = "red"
+# print(car.get("color"))
+
+player = {
+    "name": "john",
+    "level": "Medium",
+    "stats": {
+        "hp": 200,
+        "attack": 100,
+        "defense": 320
+    }
+}
+
+# some mini tasks solutions:
+
+# print(player["stats"])
+# print(player["stats"]["defense"])
+# player["stats"]["attack"] += 5
+# player["stats"]["speed"] = 10
+# print(player["stats"])
+
+# for key, value in player["stats"].items():
+#     print(key,value)
+
+pythoners = [
+    {"Name": "Sree", "Age": 22},
+    {"Name": "John", "Age": 21},
+    {"Name": "Alex", "Age": 23}
+]
+
+# print all names only
+# for i in range(0,len(pythoners)):
+    # print(pythoners[i].get("Name"))
+    # print(pythoners[i]["Name"])
+
+
+# print users older than 22
+# for i in range(0,len(pythoners)):
+#     if(pythoners[i].get("Age")>22):
+#         print(pythoners[i].get("Name"))
+
+# add a new user david, 22
+user = {
+    "Name": "David",
+    "Age": 22
+}
+pythoners.append(user)
+print(pythoners)
+
