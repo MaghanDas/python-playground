@@ -20,7 +20,16 @@ for curr in data:
         print(curr["name"], ":", curr["current_price"])
 
 username= input("enter github username: ")
-url = "https://api.github.com/users/{username}/repos"
+
+url = f"https://api.github.com/users/{username}/repos"
 response = requests.get(url)
 repos = response.json()
 
+print(repos)
+max_starts = -1 
+for repo in repos:
+    if (repo["stargazers_count"] > max_starts):
+        max_starts = repo["stargazers_count"]
+        top_repo = repo["name"]
+
+print(f"Top repository: {top_repo} with {max_starts} stars")
