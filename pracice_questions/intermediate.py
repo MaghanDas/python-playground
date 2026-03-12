@@ -46,7 +46,32 @@ print(fibonacci(10))
 
 
 # Write a program to flatten a nested list.
+def flatten(nested_list):
+    flat_list = []
+    for item in nested_list:
+        if isinstance(item, list):
+            flat_list.extend(flatten(item))
+        else:
+            flat_list.append(item)
+    return flat_list
 
 # Write a function that uses *args and **kwargs.
+def print_values(*args, **kwargs):
+    for arg in args:
+        print(arg)
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
 
 # Write a program to implement a simple calculator using functions.
+def add(a, b):
+    return a + b
+def subtract(a, b):
+    return a - b
+def multiply(a, b):
+    return a * b
+def divide(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Cannot divide by zero"
+    
