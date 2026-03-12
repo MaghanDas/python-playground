@@ -20,13 +20,30 @@ people_sorted = sorted(people, key=lambda dic: dic["age"])
 
 # Write a program to read a text file and count the frequency of each word.
 
+
 # Write a program to generate a list of squares of numbers from 1 to 20 using list comprehension.
+squares = [x**2 for x in range(1, 21)]
+print(squares)
 
 # Write a function to check if two strings are anagrams.
 
 # Write a program to find the common elements between two lists.
+list1 = [1, 2, 3, 4, 5]
+list2 = [4, 5, 6, 7, 8]
+common_elements = list(set(list1) & set(list2))
+print(common_elements)
 
 # Write a function to find the nth Fibonacci number using recursion.
+def fibonacci(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+    
+print(fibonacci(10))
+
 
 # Write a program to flatten a nested list.
 
