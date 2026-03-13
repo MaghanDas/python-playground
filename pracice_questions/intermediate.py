@@ -62,6 +62,7 @@ def print_values(*args, **kwargs):
     for key, value in kwargs.items():
         print(f"{key}: {value}")
 
+
 # Write a program to implement a simple calculator using functions.
 def add(a, b):
     return a + b
@@ -74,4 +75,7 @@ def divide(a, b):
         return a / b
     else:
         return "Cannot divide by zero"
+
+# more dsa questions to practice 
+
     
