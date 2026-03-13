@@ -77,5 +77,7 @@ def divide(a, b):
         return "Cannot divide by zero"
 
 # more dsa questions to practice 
+# Write a program to reverse a string.
+def reverse_string(s):
+    return s[::-1]
 
-    
