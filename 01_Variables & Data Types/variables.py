@@ -3,6 +3,24 @@
 
 # print("Hello World!");
 
+x = 10
+print(x) # here's what actually happends under the hood.
+''' 
+Your Code (.py file)
+      ↓
+  Lexer/Tokenizer        → breaks code into tokens
+      ↓
+  Parser                 → builds Abstract Syntax Tree (AST)
+      ↓
+  Compiler               → converts to Bytecode (.pyc)
+      ↓
+  Python Virtual Machine → executes bytecode line by line
+      ↓
+  Output
+'''
+# Python is interpreted but also compiled — just compiled to bytecode, 
+# not machine code. This is why Python is slower than C/Go but faster to write and run portably.
+
 
 age = 23;
 name = "Raj";
