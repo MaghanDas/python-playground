@@ -71,3 +71,90 @@ else:
 # age = int(input("Enter your age: "));
 # print(type(age))
 # print(f"Hello {name}, you are {age} years old")
+
+# Mutable vs Immutable in python:
+
+# Immutable types: int, float, str, float, tuple 
+# once created , the object cannot be chnaged.
+
+name = "Alexx"
+name.upper() # doesn't modfiy name 
+print(name)
+name = name.upper()  # Now name points to new object "ALICE"
+print(name)          # "ALICE"
+
+
+# Mutable types: list, dict, set . the object can be modified in place. 
+nums = [2, 3, 4]
+copy = nums # both points to the same list
+copy.append(5) # modifies the object in place
+
+print(nums) # also changed to : [2,3,4,5]
+print(copy) # [2,3,4,5]
+
+
+# ─── NUMBERS ───────────────────────────────────────────
+age = 25                 # int  — no size limit in Python!
+price = 19.99            # float — IEEE 754, has precision issues
+from decimal import Decimal
+price = Decimal("19.99") # Use this for money, never float
+
+big = 10 ** 100          # Python ints handle arbitrary size
+print(type(big))         # still <class 'int'>
+
+# ─── STRINGS ───────────────────────────────────────────
+name = "Alice"
+multi = """
+This is
+multiline
+"""
+# f-strings (use these — fastest & most readable)
+greeting = f"Hello, {name}. You are {age} years old."
+greeting = f"Result: {2 + 2}"        # expressions work too
+greeting = f"Upper: {name.upper()}"  # method calls work too
+
+# ─── BOOLEANS ──────────────────────────────────────────
+is_active = True
+print(type(True))     # <class 'bool'>  — bool is subclass of int!
+print(True + True)    # 2  ← this works (and is sometimes useful)
+print(True == 1)      # True
+
+# ─── NONE ──────────────────────────────────────────────
+result = None
+# Always check None with 'is', not ==
+if result is None:        # CORRECT
+    print("No result")
+if result == None:        # works but not Pythonic — avoid
+    print("No result")
+
+# ─── LISTS ─────────────────────────────────────────────
+items = [1, "hello", 3.14, True, None]  # mixed types allowed
+items[0]       # first element
+items[-1]      # last element
+items[1:3]     # slice: ["hello", 3.14]
+items[::-1]    # reverse
+
+# ─── TUPLES ────────────────────────────────────────────
+point = (10, 20)          # immutable list — use for fixed data
+x, y = point              # unpacking
+r, *rest = (1, 2, 3, 4)   # extended unpacking: r=1, rest=[2,3,4]
+
+# ─── DICTIONARIES ──────────────────────────────────────
+user = {
+    "name": "Alice",
+    "age": 25,
+    "active": True
+}
+user["name"]              # "Alice"
+user.get("email")         # None — safe, no KeyError
+user.get("email", "N/A")  # "N/A" — default value
+
+# ─── SETS ──────────────────────────────────────────────
+tags = {"python", "backend", "python"}  # duplicates removed
+print(tags)      # {"python", "backend"}
+
+a = {1, 2, 3}
+b = {2, 3, 4}
+print(a & b)     # intersection: {2, 3}
+print(a | b)     # union: {1, 2, 3, 4}
+print(a - b)     # difference: {1}
