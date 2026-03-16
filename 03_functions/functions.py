@@ -1,10 +1,10 @@
 
 # 🔹 What is a Function?
-# A function is a block of reusable code that performs a specific task. It helps in making the code modular, reusable, and organized.
+# A function is a block of reusable code that performs a specific task.
+#  It helps in making the code modular, reusable, and organized.
 
 # 🔹 Defining a Function
 # We use the def keyword to define a function
-
 
 # def fun():
 #   print("Hello function")
@@ -133,3 +133,43 @@ def fibonacci(n):
 # ✅ Recursive step: F(n) = F(n-1) + F(n-2).
 # ✅ Output for fibonacci(4): 2 (✅ Correct: 0, 1, 1, 2).
 
+
+# some more function knowledge :  used in production
+
+def calculate_tax(price: float, rate: float = 0.1) -> float:
+    return price * rate 
+
+# multiple return values: returns a tuple
+def min_max(numbers: list) -> tuple[int, int]:
+    return min(numbers), max(numbers)
+
+low, high = min_max([1,2,3,5,2,6,7])
+
+# *args and **kwargs 
+def log(*args, **kwargs):
+    print(args) # tuple of positional args
+    print(kwargs) # dict of keyword args
+
+log("error", "something broke", level="ERROR", code=500)
+# ('error', 'something broke')
+# {'level': 'ERROR', 'code': 500}
+
+
+# exercise:
+# 1. What does this print and WHY?
+a = [1, 2, 3]
+b = a
+b += [4]
+print(a)
+
+# 2. Fix this function so it doesn't mutate the input
+def add_default(data: dict, key: str, value) -> dict:
+    data[key] = value
+    return data
+
+# 3. Write a function that takes any number of numbers
+# and returns their average. Handle empty input gracefully.
+
+# 4. What's the output?
+print(bool(0), bool(""), bool([]), bool(None))
+print(bool(1), bool("a"), bool([0]), bool(False))
