@@ -45,3 +45,8 @@ print(Dog.species)       # same — accessed from class directly
 # Instance variables are separate
 print(dog1.name)         # Rex
 print(dog2.name)         # Bella
+
+
+# under the hood when we all dog1.bark(), python 
+# actually calls Dog.bark(dog1) - self is instance passed automatically.
+
