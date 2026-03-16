@@ -21,6 +21,20 @@ Your Code (.py file)
 # Python is interpreted but also compiled — just compiled to bytecode, 
 # not machine code. This is why Python is slower than C/Go but faster to write and run portably.
 
+x = 10 # x points to integer objetc 10 in memory. 
+y = x # y points to the same object, not a copy.
+
+print(id(x)) # id() shows memory address 
+print(id(y)) # same address, both points to the same object
+
+y = 20 # Now y points to a new object (20)
+
+# Everything in Python is an object. Integers, strings, functions, classes — all objects.
+print(type(10))          # <class 'int'>
+print(type("hello"))     # <class 'str'>
+print(type(print))       # <class 'builtin_function_or_method'>
+# Even None is an object
+print(type(None))        # <class 'NoneType'>
 
 age = 23;
 name = "Raj";
