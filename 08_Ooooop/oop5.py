@@ -54,9 +54,11 @@ class Triangle(Shape):
 # polymorphism- same functions works on any shape.
 def print_shape_info(shape:Shape)->None:
     print(shape.describe())
-    
+
 shapes = [Circle(5), Rectangle(4, 6), Triangle(3, 4, 5)]
 
 
 for shape in shapes:
     print_shape_info(shape)   # works for ALL without if/elif chains
+
+
