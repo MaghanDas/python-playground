@@ -49,3 +49,45 @@ print(account.balance)        # 1300  ← via @property, looks like attribute
 
 print(account.get_history())
 # ['Deposit: +500', 'Withdrawal: -200']
+
+# Pillar -2 : Inheritance 
+class Animal:
+    def __init__(self, name:str, sound: str):
+        self.name = name
+        self.sound = sound
+
+    def speak(self)-> str:
+        return f"{self.name} says {self.sound}"
+
+    def __repr__(self)-> str:
+        return f"{self.__class__.__name__}(name={self.name!r}, sound={self.sound!r})"
+    
+class Dog(Animal):
+    def __init__(self, name:str, breed: str):
+        super().__init__(name, "Woof")
+        self.breed = breed 
+    
+    def fetch(self)-> str:
+        return f"{self.name} is fetching a ball." 
+
+class Cat(Animal):
+    def __init__(self, name:str, breed: str):
+        super().__init__(name, "Meow")
+        self.breed = breed 
+    
+    def speak(self)-> str:
+        base = super().speak()
+        return f"{base} - Purr Purr"
+
+dog = Dog("Rex", "German Shepherd")
+cat = Cat("Whiskers", "Siamese")
+
+print(dog.speak())    # Rex says Woof          ← inherited from Animal
+print(dog.fetch())    # Rex fetches the ball!  ← Dog-specific
+print(cat.speak())    # Whiskers says Meow (and ignores you)  ← overridden
+
+# isinstance checks — very useful in production
+print(isinstance(dog, Dog))     # True
+print(isinstance(dog, Animal))  # True  ← Dog IS an Animal
+print(isinstance(cat, Dog))     # Fals
+print(isinstance(cat, Animal))  # True  ← Cat IS an Animal
