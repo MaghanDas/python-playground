@@ -54,3 +54,8 @@ def factorial(n: int):
             result *= i
         return {"result": result}
 
+
+app.get("/power/{base}/{exponent}")
+def power(base: float, exponent: float):
+    return {"result": base ** exponent}
+    
