@@ -246,8 +246,22 @@ log("error", "something broke", "yes", level="ERROR", code=5000)
     
 
     
+#     What is OOP in Python?
+
+# In Python, everything is an object. OOP helps you:
+
+# Structure large programs cleanly
+# Reuse code
+# Make code easier to maintain
+
+# Basic building blocks:
+
+# Class → blueprint for objects
+# Object → instance of a class
+# Method → function inside a class
+# Attribute → variable inside a class
     
-    
+
 
 
 
