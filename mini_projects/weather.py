@@ -1,3 +1,6 @@
+# there are also more prjects related to apis in ./09_APIS folder.
+# checkout and praticing them
+
 import requests
 
 API_KEY = "93efd86f7acab286c57ea5f055d3a3e7"  
