@@ -137,8 +137,8 @@ print(True == 2 == 2)      # False, use parenthesis
 # if result == None:        # works but not Pythonic — avoid
 #     print("No result")
 
-# ─── LISTS ─────────────────────────────────────────────
-items = [1, "hello", 3.14, True, None]  # mixed types allowed
+# ─── LISTS - mixed DataTypes allowed ─────────────────────────────
+items = [1, "hello", 3.14, True, None]
 items[0]       # first element
 items[-1]      # last element
 items[1:3]     # slice: ["hello", 3.14]
