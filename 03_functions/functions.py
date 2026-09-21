@@ -1,20 +1,20 @@
 
-# 🔹 What is a Function?
+# What is a Function?
 # A function is a block of reusable code that performs a specific task.
-#  It helps in making the code modular, reusable, and organized.
+# It helps in making the code modular, reusable, and organized.
 
-# 🔹 Defining a Function
+# Defining a Function
 # We use the def keyword to define a function
 
-# def fun():
-#   print("Hello function")
+def fun():
+  print("Hello function")
 
-# def fun(name):
-#     print(f"Hello {name}")
+def fun(name):
+    print(f"Hello {name}")
 
 
 # fun()
-# fun("das")
+fun("das")
 
 def sum(a, b):
     return (a+b)
@@ -22,8 +22,8 @@ def sum(a, b):
 def nums(*num):
     print(num[1])
 
-# print(sum(3, 2));
-# nums(1, 2, 3, 4, 5, 6);
+print(sum(3, 2))
+nums(1, 2, 3, 4, 5, 6)
 
 
 # range(start, stop, step)
@@ -57,7 +57,7 @@ def factorial2(num):
 # print("H", "E", "L", "L", "O", sep="")
 
 
-# 🔥 Mini Challenge
+# Mini Challenge
 # Create a function called multiply that takes two numbers and returns their product.
 # Create a function called is_even that takes a number and returns True if even, else False.
 # Modify is_even to return a custom message instead of True/False.
@@ -82,7 +82,7 @@ def is_even2(num):
 
 # print(is_even2(3))
 
-# 🔹 Lambda Functions
+# Lambda Functions
 # Python allows anonymous functions using the lambda keyword
 
 # square = lambda x: x * x 
@@ -90,7 +90,7 @@ def is_even2(num):
 # print(square (5))
 # # print(multiply(3,4))
 
-# 🔹 Recursion in Python
+#  Recursion in Python
 #  A function that calls itself is called a recursive function. It is useful for problems like factorial, Fibonacci, tree traversal, etc.
 
 # factorial using recursion
@@ -103,7 +103,7 @@ def factRec(num):
     
 # print(factRec(0))
 
-# 🔥 Mini Challenge
+#  Mini Challenge
 # Write a recursive function to calculate the sum of digits of a number.
 # Write a recursive function to calculate Fibonacci numbers.
 
@@ -129,9 +129,9 @@ def fibonacci(n):
 
 # print(fibonacci(4))
 
-# ✅ Base cases: fibonacci(1) = 0, fibonacci(2) = 1.
-# ✅ Recursive step: F(n) = F(n-1) + F(n-2).
-# ✅ Output for fibonacci(4): 2 (✅ Correct: 0, 1, 1, 2).
+# Base cases: fibonacci(1) = 0, fibonacci(2) = 1.
+# Recursive step: F(n) = F(n-1) + F(n-2).
+# Output for fibonacci(4): 2 ( Correct: 0, 1, 1, 2).
 
 
 # some more function knowledge :  used in production
